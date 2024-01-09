@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p9</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --silver: #cccccc;
+            --green: #304d1d;
+            --gray: #676666; 
+            --brown: #aa6424;
+        }
+        body{
+            background-color: rgb(235, 235, 235);
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(18, 1fr);
+        }
+        #pizarra{
+            background-color: var(--green);
+            grid-column: 2/7;
+            grid-row: 3/16;
+        }
+        #franja_gris{
+            background-color: var(--gray);
+            grid-column: 2/7;
+            grid-row: 16/16;
+        }
+        #borrador{
+            background-color: var(--brown);
+            grid-column: 5/5;
+            grid-row: 15/16;
+        }
+        #insta, #nom, #curso{
+            color: white;
+            font-family:Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #texto_1, #nom{
+            background-color: var(--silver);
+            grid-column: 3/6;
+            grid-row: 5/5;
+        }
+        #texto_2, #curso{
+            background-color: var(--silver);
+            grid-column: 3/6;
+            grid-row: 8/8;
+        }
+        #texto_3, #insta{
+            background-color: var(--silver);
+            grid-column: 3/6;
+            grid-row: 11/11;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="pizarra"></div>
+        <div id="franja_gris"></div>
+        <div id="borrador"></div>
+        <div id="texto_1"></div>
+        <div id="texto_2"></div>
+        <div id="texto_3"></div>
+        <div id="nom">Sara Jácome Tortosa</div>
+        <div id="insta"><a href="https://www.instagram.com/ssarajcm/">@ssarajcm</a></div>
+        <div id="curso">2º Gráfica Publicitaria</div>
+
+            
+
+        
+        </div>
+</body>
+</html>
